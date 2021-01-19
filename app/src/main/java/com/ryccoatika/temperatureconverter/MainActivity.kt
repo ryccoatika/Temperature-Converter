@@ -11,4 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+        scaleChooserDialog = MaterialAlertDialogBuilder(this).apply {
+            setItems(R.array.scale) { _, pos ->
+                val scales = resources.obtainTypedArray(R.array.scale) // typedarray is for get the resource from array, instead getting the string
+                viewModel.setScale(scales.getResourceId(pos, 0))
+                scales.recycle()
+            }
+        }
 }
