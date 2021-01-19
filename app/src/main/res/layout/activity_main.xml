@@ -153,4 +153,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_convert"
         app:constraint_referenced_ids="result_celsius,result_fahrenheit,result_kelvin" />
+
+    <include
+        android:id="@+id/input"
+        layout="@layout/layout_number_input"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_convert"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
