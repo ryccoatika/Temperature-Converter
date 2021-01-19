@@ -16,4 +16,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/button_convert"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toBottomOf="@id/top_background"
+        app:layout_constraintEnd_toEndOf="@id/top_background"
+        app:layout_constraintStart_toStartOf="@id/top_background"
+        app:layout_constraintTop_toBottomOf="@id/top_background"
+        tools:ignore="ContentDescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>
